@@ -168,7 +168,6 @@ def main():
     # additional spaces to the output, making it significantly larger.
     file = os.environ['OSMFILE']
     data = process_map(file, True)
-    #pprint.pprint(data)
 
     
 if __name__ == "__main__":

@@ -66,7 +66,6 @@ def update_telephone(name):
 def main():
     file = os.environ['OSMFILE']
     telephone_types = audit(file)
-    #pprint.pprint(dict(telephone_types))
 
     for number in telephone_types:
         better_number = update_telephone(number)

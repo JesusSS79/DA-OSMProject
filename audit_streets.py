@@ -82,7 +82,6 @@ def update_street(name):
 def main():
     file = os.environ['OSMFILE']
     st_types = audit(file)
-    #pprint.pprint(dict(st_types))
 
     for st_type, ways in st_types.items():
         for name in ways:
