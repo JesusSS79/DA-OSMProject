@@ -8,8 +8,6 @@ import xml.etree.cElementTree as ET
 import pprint
 import os
 
-OSMFILE = "LaPalma.osm"
-
 def count_tags(filename):
     tags = {}
     

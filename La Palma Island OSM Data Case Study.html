@@ -11801,7 +11801,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">env</span> OSMFILE=LaPalma.osm
@@ -11841,7 +11841,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">run</span> mapparser.py
@@ -11913,7 +11913,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display problems on key tags</span>
@@ -11952,11 +11952,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display correctons on street names</span>
-<span class="o">%</span><span class="k">run</span> audit-streets.py
+<span class="o">%</span><span class="k">run</span> audit_streets.py
 </pre></div>
 
 </div>
@@ -11975,14 +11975,14 @@ div#notebook {
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>CALLE 30 DE MAYO Nº 1B (GENERAL TF-812 - SAN PEDRO KM 1.2) =&gt; Calle 30 DE MAYO Nº 1B (GENERAL TF-812 - SAN PEDRO KM 1.2)
 CARRETERA VECINAL A PUERTO NAOS LA LAGUNA KM 3.5 =&gt; Carretera VECINAL A PUERTO NAOS LA LAGUNA KM 3.5
-CARRETERA LP1- CRUCE SAN ANTONIO DEL MONTE KM. S/N =&gt; Carretera LP1- CRUCE SAN ANTONIO DEL MONTE KM. S/N
 CARRETERA GENERAL LA GRAMA, KM 3.8 (CARRETERA VARIANTE TF-812 KM 3.8) =&gt; Carretera GENERAL LA GRAMA, KM 3.8 (Carretera VARIANTE TF-812 KM 3.8)
 CARRETERA LP2 FUENCALIENTE KM 24.6 =&gt; Carretera LP2 FUENCALIENTE KM 24.6
+CARRETERA LP1- CRUCE SAN ANTONIO DEL MONTE KM. S/N =&gt; Carretera LP1- CRUCE SAN ANTONIO DEL MONTE KM. S/N
 Ctra. Gral. de Tajuya, 2 =&gt; Carretera Gral. de Tajuya, 2
+Ctra. General de Padrón =&gt; Carretera General de Padrón
+Ctra. Puerto Naos A =&gt; Carretera Puerto Naos A
 Ctra. Gral Las Manchas =&gt; Carretera Gral Las Manchas
 Ctra. La Costa-El Faro =&gt; Carretera La Costa-El Faro
-Ctra. Puerto Naos A =&gt; Carretera Puerto Naos A
-Ctra. General de Padrón =&gt; Carretera General de Padrón
 8Ctra. Gral. Enpalme Dos Pinos =&gt; 8Carretera Gral. Enpalme Dos Pinos
 Created. Gral =&gt; Carretera Gral
 Crta. de Puerto Naos =&gt; Carretera de Puerto Naos
@@ -12001,11 +12001,11 @@ C/ Maximiliano Pérez =&gt; Calle Maximiliano Pérez
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display phone numbers corrections</span>
-<span class="o">%</span><span class="k">run</span> audit-phoneNumbers.py
+<span class="o">%</span><span class="k">run</span> audit_phoneNumbers.py
 </pre></div>
 
 </div>
@@ -12022,88 +12022,88 @@ C/ Maximiliano Pérez =&gt; Calle Maximiliano Pérez
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>+34 922 48 65 69 =&gt; +34922486569
-639 837 643 =&gt; +34639837643
-922 48 57 35 =&gt; +34922485735
-673254021 =&gt; +34673254021
-+34 922 40 23 05 =&gt; +34922402305
-922.482.106 / 659.135.124 =&gt; +34922482106 / +34659135124
-+34 922 46 49 83 =&gt; +34922464983
-+34 922 46 00 30 =&gt; +34922460030
-922416304 =&gt; +34922416304
-+34 922088518 =&gt; +34922088518
+<pre>922450350 =&gt; +34922450350
 +34 922 49 12 30 =&gt; +34922491230
-+34 922 40 04 80 =&gt; +34922400480
-922464608 =&gt; +34922464608
-(+34) 922-40 60 00 =&gt; +34922406000
-+34 922 480443 =&gt; +34922480443
-+34 922 46 38 56 =&gt; +34922463856
-+34 922 444 475 =&gt; +34922444475
-+34 609 531 376 =&gt; +34609531376
-922 490 393 =&gt; +34922490393
-922485727 =&gt; +34922485727
-+34 922 464 028 =&gt; +34922464028
-922 40 81 00 =&gt; +34922408100
-922406146 =&gt; +34922406146
-+34 619 57 11 25 =&gt; +34619571125
-+34 922 40 19 13 =&gt; +34922401913
-+34 922 48 06 04 =&gt; +34922480604
-+34 922 493240 =&gt; +34922493240
-+34 922 45 17 27 =&gt; +34922451727
-+34 922 46 41 45 =&gt; +34922464145
-609 909 898 =&gt; +34609909898
-922 40 83 52 =&gt; +34922408352
-+34 922 46 23 20 =&gt; +34922462320
-+34 922460101 =&gt; +34922460101
-+31 922 017 001 =&gt; +31922017001
 +34 922 41 76 41 =&gt; +34922417641
-+34 922 44 44 27 =&gt; +34922444427
-680 407 772 =&gt; +34680407772
 922 49 32 28 =&gt; +34922493228
-+34 922 46 31 24 =&gt; +34922463124
-922 97 98 00 =&gt; +34922979800
-+34 922 40 00 15 =&gt; +34922400015
-922 497 064 =&gt; +34922497064
-+34 922 46 24 03 =&gt; +34922462403
-+34 922 493067 =&gt; +34922493067
-+34 922480447 =&gt; +34922480447
-922 444 450 =&gt; +34922444450
-922512844 =&gt; +34922512844
-922403070 =&gt; +34922403070
-+ 34 922 40 06 60 =&gt; +34922400660
-619 791 066 =&gt; +34619791066
-+34 646 458 155 =&gt; +34646458155
-922450350 =&gt; +34922450350
-+34 922 49 43 20 =&gt; +34922494320
-+34-608 017 826 =&gt; +34608017826
-922401447 =&gt; +34922401447
-922 497324 =&gt; +34922497324
-+34 922 464 886 =&gt; +34922464886
-922494155 =&gt; +34922494155
-+34 655 43 25 91 =&gt; +34655432591
-+34 922 181 463 =&gt; +34922181463
-+34922 40 00 36 =&gt; +34922400036
-+34 922 43 45 94 =&gt; +34922434594
-922461100 =&gt; +34922461100
-922 40 81 06 =&gt; +34922408106
-922486318 =&gt; +34922486318
-922 46 31 49 =&gt; +34922463149
-922 49 70 68 =&gt; +34922497068
-+34 922 43 52 91 =&gt; +34922435291
-+34 922 48 01 33 =&gt; +34922480133
-+34 922 46 3880 =&gt; +34922463880
 922 48 55 06 =&gt; +34922485506
-922411011 =&gt; +34922411011
-+34 922 461819 =&gt; +34922461819
-Tel.: 922 46 3574 =&gt; +34922463574
-+34 922 465 110 =&gt; +34922465110
-0034-922-415636 =&gt; +34922415636
-+34922411115 +34618752044 =&gt; +34922411115 / +34618752044
-+34 629 174 524 =&gt; +34629174524
-+34 922 48 02 35 =&gt; +34922480235
+673254021 =&gt; +34673254021
+922 490 393 =&gt; +34922490393
+(+34) 922-40 60 00 =&gt; +34922406000
+922403070 =&gt; +34922403070
++34 922 48 65 69 =&gt; +34922486569
++34 922 464 886 =&gt; +34922464886
++34 922 48 01 33 =&gt; +34922480133
 635169993 =&gt; +34635169993
-+34 922 41 51 36 =&gt; +34922415136
++ 34 922 40 06 60 =&gt; +34922400660
++34 922 43 52 91 =&gt; +34922435291
 +34 686717263 =&gt; +34686717263
+Tel.: 922 46 3574 =&gt; +34922463574
++34 922 46 3880 =&gt; +34922463880
++34 922 46 49 83 =&gt; +34922464983
++34 922 48 02 35 =&gt; +34922480235
+922 97 98 00 =&gt; +34922979800
++34 922 464 028 =&gt; +34922464028
++34 922 40 19 13 =&gt; +34922401913
++34 922 444 475 =&gt; +34922444475
++34 655 43 25 91 =&gt; +34655432591
+922494155 =&gt; +34922494155
++34 922 480443 =&gt; +34922480443
+922411011 =&gt; +34922411011
+922 497324 =&gt; +34922497324
+922 48 57 35 =&gt; +34922485735
++34 922 45 17 27 =&gt; +34922451727
++34 922 40 00 15 =&gt; +34922400015
++34 646 458 155 =&gt; +34646458155
++34 922 46 41 45 =&gt; +34922464145
++34 922 46 24 03 =&gt; +34922462403
++34 922 40 23 05 =&gt; +34922402305
++34 922 493067 =&gt; +34922493067
+922485727 =&gt; +34922485727
++34 922 41 51 36 =&gt; +34922415136
++34 922480447 =&gt; +34922480447
++34 629 174 524 =&gt; +34629174524
+922401447 =&gt; +34922401447
++34 922088518 =&gt; +34922088518
+922416304 =&gt; +34922416304
+922486318 =&gt; +34922486318
+0034-922-415636 =&gt; +34922415636
+922512844 =&gt; +34922512844
++34 922 46 23 20 =&gt; +34922462320
+922 497 064 =&gt; +34922497064
+922 46 31 49 =&gt; +34922463149
++34 922460101 =&gt; +34922460101
+922464608 =&gt; +34922464608
+922.482.106 / 659.135.124 =&gt; +34922482106 / +34659135124
++34 609 531 376 =&gt; +34609531376
+922461100 =&gt; +34922461100
+922 40 83 52 =&gt; +34922408352
+609 909 898 =&gt; +34609909898
++34 922 48 06 04 =&gt; +34922480604
++34 922 181 463 =&gt; +34922181463
++34 922 40 04 80 =&gt; +34922400480
++34 922 43 45 94 =&gt; +34922434594
++34 922 49 43 20 =&gt; +34922494320
+922406146 =&gt; +34922406146
++31 922 017 001 =&gt; +31922017001
+922 40 81 00 =&gt; +34922408100
+922 40 81 06 =&gt; +34922408106
+922 444 450 =&gt; +34922444450
++34922411115 +34618752044 =&gt; +34922411115 / +34618752044
++34 922 46 38 56 =&gt; +34922463856
+922 49 70 68 =&gt; +34922497068
+680 407 772 =&gt; +34680407772
++34 619 57 11 25 =&gt; +34619571125
++34 922 46 00 30 =&gt; +34922460030
++34 922 44 44 27 =&gt; +34922444427
++34 922 46 31 24 =&gt; +34922463124
+619 791 066 =&gt; +34619791066
++34922 40 00 36 =&gt; +34922400036
++34-608 017 826 =&gt; +34608017826
++34 922 461819 =&gt; +34922461819
+639 837 643 =&gt; +34639837643
++34 922 493240 =&gt; +34922493240
++34 922 465 110 =&gt; +34922465110
 </pre>
 </div>
 </div>
@@ -12116,7 +12116,7 @@ Tel.: 922 46 3574 =&gt; +34922463574
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Data-Overview-and-Additional-Ideas">Data Overview and Additional Ideas<a class="anchor-link" href="#Data-Overview-and-Additional-Ideas">&#182;</a></h1><hr>
+<h1 id="Data-Overview">Data Overview<a class="anchor-link" href="#Data-Overview">&#182;</a></h1><hr>
 
 </div>
 </div>
@@ -12138,7 +12138,7 @@ Tel.: 922 46 3574 =&gt; +34922463574
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pymongo</span> <span class="k">import</span> <span class="n">MongoClient</span>
@@ -12174,7 +12174,7 @@ Tel.: 922 46 3574 =&gt; +34922463574
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display_results</span><span class="p">(</span><span class="s2">&quot;place&quot;</span><span class="p">)</span>
@@ -12223,7 +12223,7 @@ Take into accound that the island is full of place with parking space.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display_results</span><span class="p">(</span><span class="s2">&quot;amenity&quot;</span><span class="p">)</span>
@@ -12263,7 +12263,7 @@ Take into accound that the island is full of place with parking space.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display_results</span><span class="p">(</span><span class="s2">&quot;shop&quot;</span><span class="p">)</span>
@@ -12312,7 +12312,7 @@ Take into accound that the island is full of place with parking space.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display_results</span><span class="p">(</span><span class="s2">&quot;natural&quot;</span><span class="p">)</span>
@@ -12352,7 +12352,7 @@ Take into accound that the island is full of place with parking space.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display_results</span><span class="p">(</span><span class="s2">&quot;tourism&quot;</span><span class="p">)</span>
@@ -12403,7 +12403,7 @@ Then, it is possible use the public transport and the car renting.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display_results</span><span class="p">(</span><span class="s2">&quot;public_transport&quot;</span><span class="p">)</span>
@@ -12433,6 +12433,75 @@ Then, it is possible use the public transport and the car renting.</p>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Additional-Ideas">Additional Ideas<a class="anchor-link" href="#Additional-Ideas">&#182;</a></h1><hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Improve-the-quality-of-way-classifications">Improve the quality of way classifications<a class="anchor-link" href="#Improve-the-quality-of-way-classifications">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Currently the use of road navigators is common and an efficient route calculation depends directly on the quality of the classification of roads and ways.</p>
+<p>We will analyze the labels associated ("highway" and "tracktype") with the way node to assess the quality of their classification.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">run</span> way_quality_parser.py
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;highway&#39;: 14274, &#39;tracktype&#39;: 1788, &#39;way&#39;: 36357}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Around 39% of ways are classified about type of highway and less than 5% about tracktype.</p>
+<p>It would be very beneficial to complete the classification of the way nodes and periodically validate them in order to be used as a base for the navigators.</p>
+<p>With the current quality, the error in the calculation of routes will probably be high.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>

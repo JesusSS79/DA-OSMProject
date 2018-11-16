@@ -17,6 +17,7 @@ File descriptions:
 - create_sample.py
 
 [Own scripts based on Udacity lesson quizzes]
+- way_quality_parser.py
 - audit_streets.py
 - audit_phoneNumbers.py
 - data.py
